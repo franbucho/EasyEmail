@@ -43,7 +43,7 @@ Ensure you have **Python 3.12+** installed.
 4. Click the green **send button (➝)** to send the email.
 
 ## Screenshots
-![Easy Email Desktop](EasyEmail.png)📌 *[Include some screenshots here]*
+![Easy Email Desktop](EasyEmail.png)📌 
 
 ## Security Notice ⚠️
 **Never expose your API key in a public repository!** If you accidentally commit it:
