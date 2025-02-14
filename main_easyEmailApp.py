@@ -40,26 +40,26 @@ def toggle_html():
 # Crear la ventana principal
 root = tk.Tk()
 root.title("Aplicación de Envío de Correos")
-root.geometry("360x550")  # Ajustada para un tamaño más compacto
+root.geometry("360x485")  # Ajustada para un tamaño aún más compacto
 root.config(bg="#2C2F3D")  # Fondo oscuro
 
 # Título
 title_label = tk.Label(root, text="Envía tu correo", font=("Arial", 18), fg="white", bg="#2C2F3D")
-title_label.pack(pady=20)
+title_label.pack(pady=15)
 
 # Campo para el asunto
 subject_label = tk.Label(root, text="Asunto:", font=("Arial", 12), fg="white", bg="#2C2F3D")
 subject_label.pack(pady=5)
 
 subject_entry = tk.Entry(root, font=("Arial", 12), width=40, bd=0, relief="flat", bg="#3A3F49", fg="white")
-subject_entry.pack(pady=10)
+subject_entry.pack(pady=8)
 
 # Campo para el cuerpo del correo
 body_label = tk.Label(root, text="Cuerpo del correo:", font=("Arial", 12), fg="white", bg="#2C2F3D")
 body_label.pack(pady=5)
 
 body_text = tk.Text(root, font=("Arial", 12), width=40, height=6, bd=0, relief="flat", bg="#3A3F49", fg="white")
-body_text.pack(pady=10)
+body_text.pack(pady=8)
 
 # Botón para cambiar entre texto plano y HTML
 use_html = tk.BooleanVar(value=False)  # Valor por defecto, texto plano
@@ -67,9 +67,9 @@ use_html = tk.BooleanVar(value=False)  # Valor por defecto, texto plano
 html_button = tk.Checkbutton(root, text="Modo HTML", variable=use_html, bg="#2C2F3D", fg="white", font=("Arial", 12), command=toggle_html)
 html_button.pack(pady=5)
 
-# Botón para enviar el correo
-send_button = tk.Button(root, text="➡️", font=("Arial", 14), command=send_email, bg="#4CAF50", fg="white", relief="flat", width=10)
-send_button.pack(pady=20)
+# Botón para enviar el correo (más pequeño y redondo)
+send_button = tk.Button(root, text="➡️", font=("Arial", 14), command=send_email, bg="#4CAF50", fg="white", relief="flat", width=4, height=2, borderwidth=2, bd=3, padx=8, pady=8)
+send_button.pack(pady=15)
 
 # Iniciar la aplicación
 root.mainloop()
