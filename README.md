@@ -1,0 +1,2 @@
+# EasyEmail
+main_easyEmailApp
