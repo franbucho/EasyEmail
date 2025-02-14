@@ -3,7 +3,7 @@ from tkinter import messagebox
 import resend
 
 # Configuración de la API de Resend
-resend.api_key = "API"
+resend.api_key = "re_BAWe59Zi_AQnY4fo747YfCyG13pUNnWoK"
 
 # Función para enviar el correo
 def send_email():
@@ -29,29 +29,29 @@ def send_email():
 # Crear la ventana principal
 root = tk.Tk()
 root.title("Aplicación de Envío de Correos")
-root.geometry("600x400")
-root.config(bg="#1c1c1c")  # Fondo oscuro
+root.geometry("360x640")  # Ajustada para formato vertical estilo teléfono
+root.config(bg="#2C2F3D")  # Fondo oscuro
 
 # Título
-title_label = tk.Label(root, text="Envía tu correo", font=("Arial", 20), fg="white", bg="#1c1c1c")
+title_label = tk.Label(root, text="Envía tu correo", font=("Arial", 18), fg="white", bg="#2C2F3D")
 title_label.pack(pady=20)
 
 # Campo para el asunto
-subject_label = tk.Label(root, text="Asunto:", font=("Arial", 14), fg="white", bg="#1c1c1c")
+subject_label = tk.Label(root, text="Asunto:", font=("Arial", 12), fg="white", bg="#2C2F3D")
 subject_label.pack(pady=5)
 
-subject_entry = tk.Entry(root, font=("Arial", 14), width=50)
+subject_entry = tk.Entry(root, font=("Arial", 12), width=40, bd=0, relief="flat", bg="#3A3F49", fg="white")
 subject_entry.pack(pady=10)
 
 # Campo para el cuerpo del correo
-body_label = tk.Label(root, text="Cuerpo del correo:", font=("Arial", 14), fg="white", bg="#1c1c1c")
+body_label = tk.Label(root, text="Cuerpo del correo:", font=("Arial", 12), fg="white", bg="#2C2F3D")
 body_label.pack(pady=5)
 
-body_text = tk.Text(root, font=("Arial", 14), width=50, height=10)
+body_text = tk.Text(root, font=("Arial", 12), width=40, height=8, bd=0, relief="flat", bg="#3A3F49", fg="white")
 body_text.pack(pady=10)
 
 # Botón para enviar el correo
-send_button = tk.Button(root, text="Enviar Correo", font=("Arial", 14), command=send_email, bg="#4CAF50", fg="white")
+send_button = tk.Button(root, text="Enviar Correo", font=("Arial", 12), command=send_email, bg="#4CAF50", fg="white", relief="flat")
 send_button.pack(pady=20)
 
 # Iniciar la aplicación
