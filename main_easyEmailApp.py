@@ -3,7 +3,7 @@ from tkinter import messagebox
 import resend
 
 # Configuración de la API de Resend
-resend.api_key = "API"
+resend.api_key = "API paste your own... 3000 mails moth free"
 
 # Función para enviar el correo
 def send_email():
